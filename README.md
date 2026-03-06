@@ -38,11 +38,15 @@
 ## 📸 Preview
 
 <div align="center">
-  <img src="https://placehold.co/1200x600/1e293b/indigo?text=ChatBotPro+Landing+Page" alt="Landing Page" width="100%">
+  <img src="/images/landing.png" alt="Landing Page" width="100%">
 </div>
 
 <div align="center">
-  <img src="https://placehold.co/1200x600/1e293b/indigo?text=AI+Chat+Interface" alt="Chat Interface" width="100%">
+  <img src="/images/dashboard.png" alt="Dashboard" width="100%">
+</div>
+
+<div align="center">
+  <img src="/images/chat.png" alt="Chat Interface" width="100%">
 </div>
 
 ## 🛠️ Getting Started
@@ -59,8 +63,8 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/ai-saas-chatbot.git
-cd ai-saas-chatbot
+git clone https://github.com/nguyenduchuynet/AI-SaaS-Chatbot.git
+cd AI-SaaS-Chatbot
 
 # Install dependencies
 npm install
@@ -110,24 +114,21 @@ STRIPE_PRICE_ID_PRO="price_..."
 │   └── schema.prisma        # Database schema
 ├── src/
 │   ├── app/
-│   │   ├── (dashboard)/     # Protected dashboard routes
-│   │   │   └── dashboard/
-│   │   │       ├── chat/   # Chat interface
-│   │   │       └── create/ # Chatbot creator
-│   │   ├── api/
-│   │   │   ├── auth/       # NextAuth endpoints
-│   │   │   ├── chatbots/   # Chatbot CRUD
-│   │   │   ├── chat/       # AI chat endpoint
-│   │   │   └── stripe/     # Payment endpoints
-│   │   ├── page.tsx        # Landing page
-│   │   └── layout.tsx      # Root layout
+│   │   ├── dashboard/     # Protected dashboard routes
+│   │   │   ├── chat/     # Chat interface
+│   │   │   └── create/   # Chatbot creator
+│   │   ├── api/          # API endpoints
+│   │   ├── page.tsx      # Landing page
+│   │   └── layout.tsx    # Root layout
 │   ├── components/
-│   │   └── landing/        # Landing page components
+│   │   └── landing/     # Landing page components
 │   └── lib/
-│       ├── auth.ts         # NextAuth config
-│       ├── prisma.ts       # Prisma client
-│       ├── openai.ts       # OpenAI client
-│       └── utils.ts        # Utility functions
+│       ├── auth.ts       # NextAuth config
+│       ├── prisma.ts     # Prisma client
+│       ├── openai.ts     # OpenAI client
+│       └── utils.ts      # Utility functions
+├── public/
+│   └── images/           # Preview images
 ├── .env.example
 ├── package.json
 └── README.md
@@ -154,19 +155,6 @@ STRIPE_PRICE_ID_PRO="price_..."
 | Analytics | ❌ | ✅ | ✅ |
 | Support | Community | Priority | Dedicated |
 | White-label | ❌ | ❌ | ✅ |
-
-## 🧪 Testing
-
-```bash
-# Run development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Run linter
-npm run lint
-```
 
 ## 🚀 Deployment
 
@@ -218,10 +206,4 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 <p align="center">
   Built with ❤️ by <a href="https://github.com/nguyenduchuynet">Huy Nguyen</a>
-</p>
-
-<p align="center">
-  <a href="https://twitter.com/intent/tweet?text=Check+Out+this+amazing+AI+Chatbot+Builder!&url=https://github.com/your-username/ai-saas-chatbot">
-    <img src="https://img.shields.io/badge/Tweet-Share-1DA1F2?style=for-the-badge&logo=twitter" alt="Tweet">
-  </a>
 </p>
